@@ -1,0 +1,27 @@
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+#Column denotes the index of an element in one of the lists. 
+#Row denotes the index of each list.
+
+row = len(map)
+
+first_position_to_int = int(position[0])
+second_position_to_int = int(position[1])
+
+#second_position_to_int is actually a list
+#first_position_to_int is actually an element inside one of the lists
+
+map[second_position_to_int - 1][first_position_to_int - 1] = "X"
+
+#Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
